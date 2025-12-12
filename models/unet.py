@@ -81,7 +81,7 @@ class UNet(nn.Module):
 
         self.mlp9=MLP(in_dim=dimension,out_dim=32)
         self.up1=nn.ConvTranspose2d(in_channels=64,out_channels=32, kernel_size=2, stride=2) # 28 x 28
-        self.dec1 = nn.Conv2d(64, out_channels, 3, padding=1)
+        self.dec1 = nn.Conv2d(64, 32, 3, padding=1)
 
         self.final_conv = nn.Conv2d(32, out_channels, kernel_size=1)
 
