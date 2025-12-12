@@ -14,6 +14,9 @@ DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
 CHECKPOINT_PATH = "checkpoints/unet_diffusion_ema_final.pt"
 IMG_SHAPE = (1, 1, 28, 28)
 
+st.write(f"PyTorch Device: {torch.device('cuda' if torch.cuda.is_available() else 'cpu')}")
+st.write(f"Is CUDA available? {torch.cuda.is_available()}")
+
 def tensor_to_image(tensor):
     tensor = tensor.detach().cpu()
     tensor = (tensor + 1) / 2
