@@ -4,10 +4,19 @@
 Implementation-of-DDPM/
     ├── models/
     │     └── unet.py
-    ├── diffusion/
-    │     ├── gaussian_diffusion.py
-    ├── training/
+    |     └── diffusion.py
+    |     └── __init__.py 
+    ├── scripts/
     │     └── train.py
-    ├── main.py
+    |     └── sample.py
+    ├── notebooks/
+    │     └── ddpm_from_scratch.ipynb
+    ├── checkpoints/
+    │     ├── unet_diffusion_trained.pt
+    │     ├── ...
+    ├── app/
+    │     └── app.py
+    ├── README
+    ├── gitignore
     └── requirements.txt
 ```
