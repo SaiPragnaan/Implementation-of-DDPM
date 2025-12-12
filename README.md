@@ -86,9 +86,9 @@ Instead of predicting μₜ directly, DDPM trains a U-Net to predict ε̂, the n
 
 #### U-Net input:
 
-- Noisy image xt  — shape [B, C, H, W]
+- Noisy image xt - shape [B, C, H, W]
 
-- Timestep t — embedded via sinusoidal embedding
+- Timestep t - embedded via sinusoidal embedding
 
 - (Optional) conditioning (text/image/etc)
 
