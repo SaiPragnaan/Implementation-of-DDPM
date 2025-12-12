@@ -21,8 +21,7 @@ Implementation-of-DDPM/
     ├── gitignore
     └── requirements.txt
 ```
-Model is deployed on streamlit : https://fashion-mnist-ddpm.streamlit.app/ (takes a bit more time)
-
+<!-- Model is deployed on streamlit : https://fashion-mnist-ddpm.streamlit.app/ (takes a bit more time) -->
 
 ## Training Dataset details 
 
